@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <title>
+        Login
+    </title>
+    <head>
+        <title>Login</title>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+    </head>
+    <body class="container">
+        <h2> My Banking Application </h2>
+        <div class="page-header">
+            <h3>Login</h3>      
+        </div>
+        <form action="login.py" method="POST">
+            <div class="row">
+                <label >Account Number:</label> <input type="text" name="ac_no" class="form-control"/>
+            </div>
+            <div class="row">
+                <label > Password:</label> <input type="password" name="paswd" class="form-control"/>
+            </div>
+            <br/>
+            <div  class="row"> 
+                <div class="col-md-4">
+                    <input type="Submit" value="Login" class='btn btn-primary'/>
+                </div>
+                <div class="col-md-4">
+                    <a href='forgot_password.html' class='btn btn-info'>Forgot Password</a>
+                </div>
+                <div class='col-md-4'>
+                        <a href='register.html' class='btn btn-info'>Register User</a>
+                </div>
+            </div>
+            <br/>
+            
+        </form>
+    </body>
+</html>

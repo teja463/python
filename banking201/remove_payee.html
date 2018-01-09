@@ -1,0 +1,32 @@
+<html>
+    <title>
+        Remove Payee
+    </title>
+    <head>
+        <title>Remove Payee</title>
+        <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <script src="js/bootstrap.min.js"></script>
+    </head>
+    <body class="container">
+        <h2> My Banking Application</h2>
+        <div class="page-header">
+            <h3>Remove Payee</h3>      
+        </div>
+        <form action="remove_payee.py" method="POST">
+            <div>
+                Payee Account Number: <input type="text" name="ac_no" class="form-control"/>
+    
+            </div>
+            <div>
+                Payee Account Bank: <input type="text" name="ac_bank"class="form-control" />
+    
+            </div>
+            <br />
+            <div>
+                <input type="Submit" value="Remove Payee" class='btn btn-primary'/>
+            </div>
+            
+        </form>
+    </body>
+</html>

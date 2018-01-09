@@ -1,0 +1,39 @@
+<html>
+    <title>
+        Register User
+    </title>
+    <head>
+        <title>Register</title>
+        <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <script src="js/bootstrap.min.js"></script>
+    </head>
+    <body class="container">
+        <h2> My Banking Application</h2>
+        <div class="page-header">
+            <h3>Register</h3>      
+        </div>
+        <form action="register.py" method="POST">
+            <div>
+                Account Number: <input type="text" name="ac_no" class="form-control"/>
+    
+            </div>
+            <div>
+                Account Name: <input type="text" name="ac_name" class="form-control"/>
+    
+            </div>
+            <div>
+                Account Branch: <input type="text" name="ac_branch" class="form-control"/>
+    
+            </div>
+            <div>
+                Password: <input type="password" name="paswd" class="form-control"/>
+            </div>
+            <br />
+            <div>
+                <input type="Submit" value="Register" class='btn btn-primary'/>
+            </div>
+            
+        </form>
+    </body>
+</html>
