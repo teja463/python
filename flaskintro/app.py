@@ -59,5 +59,12 @@ def update(id):
         return render_template('update.html', task=task_to_update)
 
 
+# commment below 2 lines if running in local
 with app.app_context():
     db.create_all()
+
+# if running in local uncoment below code
+# if __name__ == "__main__":
+#     with app.app_context():
+#         db.create_all()
+#     app.run(debug=True)

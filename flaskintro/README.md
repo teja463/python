@@ -11,10 +11,16 @@
 - Run `python app.py`
 - For Webserver `pip install gunicorn`
 - To Freeze requirements `pip freeze requirements.txt`
+- Remove last two lines and replace with below
+
+```python
+if __name__ == "__main__":
+    with app.app_context():
+        db.create_all()
+    app.run(debug=True)
+```
+
+- Replace sqlite string with `sqlite:///test.db`
+
+> Current code is hosted on http://python-gpti.onrender.com/
 > Use cmd or powershell to execute the command, if you use bash then for activate env use `source ./env/Scripts/activate`
-
-
-- 
-## Concepts
-
-- Flask uses ginger2 template engine
